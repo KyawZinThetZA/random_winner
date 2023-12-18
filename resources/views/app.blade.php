@@ -7,7 +7,8 @@
                 <h1 class="text-4xl font-extrabold">Winner Picker</h1>
             </div>
             <div class="flex fixed right-5 top-5">
-                <div class="inside_box text-white me-3 p-4 rounded-lg hidden chbgbox">
+                <i class="fa-solid fa-gear fa-2x cursor-pointer chbg"></i>
+                <div class="inside_box text-white me-3 p-4 mt-10 rounded-lg hidden chbgbox">
                     <h4 class="text-2xl font-semibol">Choose Theme Color </h4>
                     <div class="w-full flex justify-around items-center mt-2">
                         <select id="theme_color" class="border border-gray-300 rounded-lg block w-full p-2">
@@ -20,7 +21,6 @@
                         </select>
                     </div>
                 </div>
-                <i class="fa-solid fa-gear fa-2x cursor-pointer chbg"></i>
             </div>
         </div>
         <div class="flex justify-center items-center h-[80vh]">
@@ -42,7 +42,7 @@
                         @enderror
             </div>
 
-            <button type="submit" class="border border-[#490e0e] px-3 py-2 my-5 rounded-full">Update Title</button>
+            <button type="submit" class="border border-[var(--color)] px-3 py-2 my-5 rounded-xl">Update Title</button>
             </form>
         @else
             <form action="{{ route('uploadTitle') }}" method="POST">
@@ -57,7 +57,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="border border-[#490e0e] px-3 py-2 my-5 rounded-full">Create Title</button>
+                <button type="submit" class="border border-[var(--color)] px-3 py-2 my-5 rounded-xl">Create Title</button>
             </form>
             @endif
         </div>

@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Pyidaungsu";
-    color: #490e0e !important;
 }
 
 @media print {
@@ -31,10 +30,10 @@ body {
 input[type="file"]::file-selector-button {
     margin-right: 20px;
     border: none;
-    background: #490e0e;
+    background: var(--bg1);
     padding: 10px 20px;
     border-radius: 10px;
-    color: #fff;
+    color: var(--color);
     cursor: pointer;
     transition: background 0.2s ease-in-out;
 }
@@ -58,10 +57,6 @@ input[type="file"]::file-selector-button {
 .inside_box:hover {
     box-shadow: 0px 0px 5px 3px rgba(218, 218, 218, 1),
         0px 0px 5px 3px rgba(255, 255, 255, 1);
-}
-
-input[type="file"]::file-selector-button:hover {
-    background: #6d1919;
 }
 
 .CusTable::-webkit-scrollbar {
@@ -153,7 +148,7 @@ h1 {
 .lever button {
     text-align: center;
     border-radius: 20px;
-    border: 8px solid #490e0e !important;
+    /* border: 8px solid #490e0e !important; */
     line-height: 100px;
     width: 350px;
     border: none;
@@ -211,4 +206,22 @@ a {
     text-decoration: none;
     outline: none;
     text-overflow: ellipsis;
+}
+
+.chbg {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    animation: myanime 2s linear infinite;
+}
+
+@keyframes myanime {
+    from {
+        transform: rotate(0deg);
+        transform-origin: 50%, 50%;
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: 50%, 50%;
+    }
 }
