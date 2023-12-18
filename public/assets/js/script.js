@@ -55,7 +55,8 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(226,160,160,1)',
-                    '--color' : '#440000'
+                    '--color' : '#440000',
+                    '--table-bg' : 'rgba(255,255,255,1)'
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #440000'
@@ -78,7 +79,8 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(126,179,219,1)',
-                    '--color' : '#00053d'
+                    '--color' : '#00053d',
+                    '--table-bg' : 'rgba(255,255,255,1)'
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #00053d'
@@ -101,7 +103,8 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(153,255,161,1)',
-                    '--color' : '#02410a'
+                    '--color' : '#02410a',
+                    '--table-bg' : 'rgba(242,245,245,1)'
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #02410a'
@@ -124,7 +127,9 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(255,191,172,1)',
-                    '--color' : '#755503'
+                    '--color' : '#755503',
+                    '--table-bg' : 'rgba(236,236,236,1)'
+
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #755503'
@@ -147,7 +152,8 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(174,138,250,1)',
-                    '--color' : '#1c024f'
+                    '--color' : '#1c024f',
+                    '--table-bg' : 'rgba(226,213,242,1)'
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #1c024f'
@@ -170,7 +176,8 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(228,156,225,1)',
-                    '--color' : '#4a024f'
+                    '--color' : '#4a024f',
+                    '--table-bg' : 'rgba(254,243,254,1)'
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #4a024f'
@@ -193,7 +200,8 @@ $(document).ready(function () {
                 });
                 $(':root').css({
                     '--bg1' : 'rgba(226,160,160,1)',
-                    '--color' : '#440000'
+                    '--color' : '#440000',
+                    '--table-bg' : 'rgba(255,255,255,1)'
                 });
                 $('.customer_reel,.product_reel,.lever button').css({
                     border : '8px solid #440000'
@@ -203,7 +211,7 @@ $(document).ready(function () {
                     background:
                         "linear-gradient(0deg, rgba(135,2,2,1) 0%, rgba(255,169,169,1) 100%)",
                 });
-                $(".inside_box").css({
+                $(".inside_box,.TwoColorBtn,#startSlot").css({
                     background: "rgb(226,160,160)",
                     background:
                         "linear-gradient(0deg, rgba(226,160,160,1) 0%, rgba(255,255,255,1) 100%)",
