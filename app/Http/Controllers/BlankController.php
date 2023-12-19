@@ -33,7 +33,6 @@ class BlankController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
         $this->checkBlankValidation($request);
 
         $customers = Customer::count();

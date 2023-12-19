@@ -8,7 +8,7 @@
             </div>
             <div class="flex fixed right-5 top-5">
                 <i class="fa-solid fa-gear fa-2x cursor-pointer chbg"></i>
-                <div class="inside_box text-white me-3 p-4 mt-10 rounded-lg hidden chbgbox">
+                <div class="inside_box me-3 p-4 mt-10 rounded-lg hidden chbgbox">
                     <h4 class="text-2xl font-semibol">Choose Theme Color </h4>
                     <div class="w-full flex justify-around items-center mt-2">
                         <select id="theme_color" class="border border-gray-300 rounded-lg block w-full p-2">
@@ -25,7 +25,7 @@
         </div>
         <div class="flex justify-center items-center h-[80vh]">
             <div
-                class="p-5 w-[50%] bg-slate-700 text-white text-center hover:p-8 transition-[padding] ease-in-out duration-500 rounded-lg inside_box">
+                class="p-5 w-[50%] bg-slate-700 text-center hover:p-8 transition-[padding] ease-in-out duration-500 rounded-lg inside_box">
                 <h3 class="text-2xl my-12 font-extrabold">Welcome from Random Winner Picker</h3>
 
                 @if (!is_null($titles))
@@ -33,8 +33,7 @@
                         @csrf
                         <div class="input-group my-8" id="testBG">
                             <input type="text" name="EventTitle" id="EventTitle" value="{{ $titles->title }}"
-                                class="w-full text-slate-500 p-2 border-none rounded-xl outline-none "
-                                placeholder="Enter Event Name...">
+                                class="w-full p-2 border-none rounded-xl outline-none " placeholder="Enter Event Name...">
 
                             @error('EventTitle')
                                 class="text-start">{{ $message }}
@@ -49,8 +48,7 @@
                 @csrf
                 <div class="input-group my-8">
                     <input type="text" name="EventTitle" id="EventTitle"
-                        class="w-full text-slate-500 p-2 border-none rounded-xl outline-none "
-                        placeholder="Enter Event Name...">
+                        class="w-full p-2 border-none rounded-xl outline-none " placeholder="Enter Event Name...">
 
                     @error('EventTitle')
                         <div class="text-start">{{ $message }}</div>

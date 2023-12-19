@@ -32,8 +32,7 @@
             @else
                 <div class="">
                     <a href="{{ route('Upload') }}">
-                        <button class="p-10 TwoColorBtn rounded-lg text-xl">No More Data! (back to upload
-                            page)</button>
+                        <button class="p-10 TwoColorBtn rounded-lg text-xl">No More Data! (back to upload page)</button>
                     </a>
                 </div>
             @endif

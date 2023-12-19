@@ -23,16 +23,20 @@ Route::get('/', function () {
     return view('app', compact('titles'));
 });
 
+//Upload routes
 Route::post('UploadTitle', [TitleController::class, 'uploadTitle'])->name('uploadTitle');
 Route::get('uploadPage', [UploadController::class, 'goUploadPage'])->name('Upload');
 Route::get('getCustomer', [UploadController::class, 'getCustomer'])->name('getCustomer');
 Route::post('uploadCustomer', [UploadController::class, 'store'])->name('uploadCustomer');
 Route::post('uploadProduct', [UploadController::class, 'storeProduct'])->name('uploadProduct');
+
+//blank gifts routes
 Route::get('enterBlank', [BlankController::class, 'creat'])->name('enterBlank');
 Route::post('getCusProd', [BlankController::class, 'index'])->name('getCusProd');
 Route::post('storeBlank', [BlankController::class, 'store'])->name('storeBlank');
+
+//winner routes
 Route::post('uploadWinner', [WinnerController::class, 'uploadWinner'])->name('uploadWinner');
 Route::get('PickWinner', [WinnerController::class, 'goPickWinner'])->name('PickWinner');
 Route::get('winnerList', [WinnerController::class, 'goWinnerList'])->name('goWinnerList');
-Route::get('exportWinnerList', [WinnerController::class, 'exportWinnerList'])->name('exportWinnerList');
 Route::get('clearWinnerTable', [WinnerController::class, 'clearWinnerTable'])->name('clearWinnerTable');

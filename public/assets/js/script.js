@@ -14,7 +14,6 @@ $(document).ready(function () {
         url: "getCustomer",
         method: "GET",
         success: function (data) {
-            // console.log(data);
             $.each(data.customer, function (i, v) {
                 var name = v.name;
                 var id = v.id;
@@ -369,7 +368,6 @@ $(document).ready(function () {
                     ),
                 },
                 success: function () {
-                    // console.log("Successfully Saved Winner");
                     location.reload();
                 },
             });

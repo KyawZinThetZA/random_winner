@@ -60,7 +60,7 @@ input[type="file"]::file-selector-button {
 }
 
 .CusTable::-webkit-scrollbar-thumb {
-    background: #6d1919;
+    background: var(--color);
 }
 
 .TwoColorBtn {
@@ -143,7 +143,6 @@ h1 {
 .lever button {
     text-align: center;
     border-radius: 20px;
-    /* border: 8px solid #490e0e !important; */
     line-height: 100px;
     width: 350px;
     border: none;

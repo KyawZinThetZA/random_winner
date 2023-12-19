@@ -100,7 +100,6 @@
                 url: "getCustomer",
                 method: "GET",
                 success: function(data) {
-                    // console.log(data);
                     $.each(data.customer, function(i, v) {
                         var name = v.name;
 
@@ -112,11 +111,11 @@
 
                         product_arr.push(name);
                     });
-                    balhkensammae();
+                    blank_prize();
                 },
             });
 
-            function balhkensammae() {
+            function blank_prize() {
                 if (customer_arr.length > product_arr.length) {
                     $('#toggleModal').removeClass('hidden');
                 } else {

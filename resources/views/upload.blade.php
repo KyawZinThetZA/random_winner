@@ -29,7 +29,7 @@
             <div class="w-full mx-5 max-h-[750px] rounded-xl inside_box p-10">
                 <form action="{{ route('uploadCustomer') }}" method="post" enctype="multipart/form-data" class="mb-3">
                     @csrf
-                    <h1 class="text-center text-white text-[20px] mt-3">Upload Participant File</h1>
+                    <h1 class="text-center text-[20px] mt-3">Upload Participant File</h1>
                     <div class="inputField gap-3 mt-10 border border-[var(--color)] w-full rounded-xl border-dashed p-5">
                         <input type="file" name="CustomerUpload" id="CustomerUpload" class="w-full cursor-pointer">
 
@@ -57,7 +57,7 @@
                 @if (session('success'))
                     <div class="flex justify-end">
                         <div id="alert-cust"
-                            class="flex items-center p-3 mb-4 bg-gradient-to-tl from-green-600 to-lime-400 rounded-xl w-auto "
+                            class="flex items-center p-3 mb-4 bg-gradient-to-tl from-[var(--bg1)] to-[var(--table-bg)] rounded-xl w-auto "
                             role="alert">
                             <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">
@@ -108,7 +108,7 @@
             <div class="w-full mx-5 max-h-[750px] rounded-xl inside_box p-10">
                 <form action="{{ route('uploadProduct') }}" method="post" enctype="multipart/form-data" class="mb-3">
                     @csrf
-                    <h1 class="text-center text-white text-[20px] mt-3">Upload Gifts File</h1>
+                    <h1 class="text-center text-[20px] mt-3">Upload Gifts File</h1>
                     <div class="inputField gap-3 mt-10 border border-[var(--color)] w-full rounded-xl border-dashed p-5">
                         <input type="file" name="ProductUpload" id="ProductUpload" class="w-full cursor-pointer">
                     </div>
@@ -133,7 +133,7 @@
                 @if (session('PSuccess'))
                     <div class="flex justify-end">
                         <div id="alert-product"
-                            class="flex items-center p-3 mb-4 bg-gradient-to-tl from-green-600 to-lime-400 rounded-xl w-auto "
+                            class="flex items-center p-3 mb-4 bg-gradient-to-tl from-[var(--bg1)] to-[var(--table-bg)] rounded-xl w-auto "
                             role="alert">
                             <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">

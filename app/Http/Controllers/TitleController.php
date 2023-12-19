@@ -27,6 +27,7 @@ class TitleController extends Controller
         }
     }
 
+    //check title validation
     private function checkTitleValidate(Request $request)
     {
         Validator::make($request->all(), [
